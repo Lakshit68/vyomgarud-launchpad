@@ -27,18 +27,18 @@ const Hero = () => {
           Military-grade UAV systems delivering unmatched reliability for critical operations
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
           <Button 
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg hover-lift hover-glow group"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg hover-lift hover-glow group w-full sm:w-auto"
           >
             Explore Systems
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
           </Button>
           <Button 
             size="lg" 
             variant="outline" 
-            className="border-2 border-border hover:bg-secondary font-semibold px-8 py-6 text-lg hover-lift"
+            className="border-2 border-border hover:bg-secondary font-semibold px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg hover-lift w-full sm:w-auto"
           >
             Contact Us
           </Button>
