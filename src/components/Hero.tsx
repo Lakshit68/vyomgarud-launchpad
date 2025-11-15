@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroDrone from "@/assets/hero-drone.jpg";
 
 const Hero = () => {
@@ -28,20 +29,24 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg hover-lift hover-glow group w-full sm:w-auto"
-          >
-            Explore Systems
-            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-2 border-border hover:bg-secondary font-semibold px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg hover-lift w-full sm:w-auto"
-          >
-            Contact Us
-          </Button>
+          <Link to="/systems" className="w-full sm:w-auto">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg hover-lift hover-glow group w-full"
+            >
+              Explore Systems
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </Link>
+          <Link to="/contact" className="w-full sm:w-auto">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-2 border-border hover:bg-secondary font-semibold px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg hover-lift w-full"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
 
